@@ -6,6 +6,7 @@ import {
   HiPhone,
   HiLocationMarker,
   HiExternalLink,
+  HiDownload,
 } from "react-icons/hi";
 import { FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
 
@@ -96,7 +97,7 @@ const Resume = () => {
             </a>
 
             <a
-              href="https://github.com/shahinAlam715"
+              href="https://my-prossional-protfilio.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 hover:text-blue-600"
@@ -380,6 +381,19 @@ const Resume = () => {
           </div>
         </section>
       </main>
+
+{/* Download Resume Button */}
+<div className="mx-auto mt-6 flex max-w-4xl justify-center print:hidden">
+  <a
+    href="/Shahin-Alam-Resume.pdf"
+    download="Md-Shahin-Alam-Resume.pdf"
+    className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-lg sm:w-auto"
+  >
+    <HiDownload className="text-xl" />
+    Download Resume (PDF)
+  </a>
+</div>
+
     </div>
   );
 };
